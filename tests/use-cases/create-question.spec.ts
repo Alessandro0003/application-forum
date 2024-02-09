@@ -1,6 +1,4 @@
-import { QuestionRepository } from '@/domain/forum/application/repositories/question-repository'
 import { CreateQuestionUseCase } from '@/domain/forum/application/use-cases/create-question'
-import { Question } from '@/domain/forum/enterprise/entities/question'
 import { InMemoryQuestionRepository } from 'tests/repositories/in-memory-questions-repository'
 
 let inMemoryQuestionRepository: InMemoryQuestionRepository
