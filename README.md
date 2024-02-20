@@ -1,11 +1,27 @@
-# Expert Domain 
-    - Muita dificuldade em saber as duvidas dos alunos
-    - Eu tenho que responder os alunos e eu me perco em quais dúvidas já foram respondidas  
+> # Application Forum 
 
->    ## Exemplo de uma conversa de Expert Domain com o Desenvolvedor que estás densenolvendo o software
+> ## ⚙ Tools 
 
-    Separando as palavras chaves da conversa em Entities e Use Case
+- Node
+- Typescript
+- Vitest
+- Vite
+- Principles DDD 
 
-    -> Entities => são palavras chaves => como (Eu,  Alunos)
+> ## Functionality 
 
-    -> Use Case => são palavras chaves => como (Responde )
+> ### Question
+[x] - Create Question
+[x] - Listing Question
+[x] - Fetch Question Comment
+[x] - Fetch Question Answer
+[x] - Edit Question
+[x] - Delete Question
+
+> ### Answer
+[x] - Create Answer
+[x] - Listing Answer
+[x] - Fetch Answer
+[x] - Fetch Answer Comment
+[x] - Edit Answer
+[x] - Delete Answer
