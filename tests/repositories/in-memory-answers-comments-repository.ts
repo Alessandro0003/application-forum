@@ -15,9 +15,9 @@ export class InMemoryAnswersCommentsRepository implements AnswersCommentsReposit
     return answerComment
   }
 
-  async findManyByAnswerId (answerId: string, { page }: PaginationParams): Promise<AnswerComment[]> {
+  async findManyByAnswerId (answerCommentId: string, { page }: PaginationParams): Promise<AnswerComment[]> {
     const answersComment = this.items
-      .filter((item) => item.answerId.toString() === answerId)
+      .filter((item) => item.answerId.toString() === answerCommentId)
       .slice((page - 1) * 20, page * 20)
 
     return answersComment
