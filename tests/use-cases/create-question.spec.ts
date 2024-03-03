@@ -14,7 +14,7 @@ describe('Create Question', () => {
     const result = await sut.execute({
       authorId: '1',
       title: 'Title-example',
-      content: 'Content-example'
+      content: ''
     })
 
     expect(result.isRight()).toBe(true)
