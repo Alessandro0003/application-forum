@@ -1,3 +1,4 @@
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { CreateQuestionUseCase } from '@/domain/forum/application/use-cases/create-question'
 import { InMemoryQuestionRepository } from 'tests/repositories/in-memory-questions-repository'
 
@@ -14,10 +15,16 @@ describe('Create Question', () => {
     const result = await sut.execute({
       authorId: '1',
       title: 'Title-example',
-      content: ''
+      content: 'Content Example',
+      attachmentsIds: ['1', '2']
     })
 
     expect(result.isRight()).toBe(true)
     expect(inMemoryQuestionRepository.items[0]).toEqual(result.value?.question)
+    expect(inMemoryQuestionRepository.items[0].attachments).toHaveLength(2)
+    expect(inMemoryQuestionRepository.items[0].attachments).toEqual([
+      expect.objectContaining({ attachmentId: new UniqueEntityID('1') }),
+      expect.objectContaining({ attachmentId: new UniqueEntityID('2') })
+    ])
   })
 })
