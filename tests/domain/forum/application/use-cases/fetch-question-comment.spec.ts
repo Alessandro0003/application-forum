@@ -1,7 +1,7 @@
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { FetchQuestionCommentsUseCase } from '@/domain/forum/application/use-cases/fetch-question-comments'
 import { makeQuestionComment } from 'tests/factories/make-question-comment'
-import { InMemoryQuestionCommentsRepository } from 'tests/repositories/in-memory-question-comments-repository'
+import { InMemoryQuestionCommentsRepository } from '../repositories/in-memory-question-comments-repository'
 
 let inMemoryQuestionCommentsRepository: InMemoryQuestionCommentsRepository
 let sut: FetchQuestionCommentsUseCase

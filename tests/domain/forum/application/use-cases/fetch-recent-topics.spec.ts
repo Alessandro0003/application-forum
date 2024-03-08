@@ -1,7 +1,7 @@
 import { FetchRecentTopicsUseCase } from '@/domain/forum/application/use-cases/fetch-recent-topics'
 import { makeQuestion } from 'tests/factories/make-question'
-import { InMemoryQuestionAttachmentsRepository } from 'tests/repositories/in-memory-question-attachments-repository'
-import { InMemoryQuestionRepository } from 'tests/repositories/in-memory-questions-repository'
+import { InMemoryQuestionAttachmentsRepository } from '../repositories/in-memory-question-attachments-repository'
+import { InMemoryQuestionRepository } from '../repositories/in-memory-questions-repository'
 
 let inMemoryQuestionAttachmentsRepository: InMemoryQuestionAttachmentsRepository
 let inMemoryQuestionRepository: InMemoryQuestionRepository

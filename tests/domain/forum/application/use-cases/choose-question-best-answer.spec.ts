@@ -3,10 +3,10 @@ import { ChooseQuestionBestAnswerUseCase } from '@/domain/forum/application/use-
 import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not-allowed-error'
 import { makeAnswer } from 'tests/factories/make-answer'
 import { makeQuestion } from 'tests/factories/make-question'
-import { InMemoryAnswerAttachmentsRepository } from 'tests/repositories/in-memory-answers-attachments.repository'
-import { InMemoryAnswersRepository } from 'tests/repositories/in-memory-answers-repository'
-import { InMemoryQuestionAttachmentsRepository } from 'tests/repositories/in-memory-question-attachments-repository'
-import { InMemoryQuestionRepository } from 'tests/repositories/in-memory-questions-repository'
+import { InMemoryQuestionAttachmentsRepository } from '../repositories/in-memory-question-attachments-repository'
+import { InMemoryAnswerAttachmentsRepository } from '../repositories/in-memory-answers-attachments.repository'
+import { InMemoryQuestionRepository } from '../repositories/in-memory-questions-repository'
+import { InMemoryAnswersRepository } from '../repositories/in-memory-answers-repository'
 
 let inMemoryQuestionAttachmentsRepository: InMemoryQuestionAttachmentsRepository
 let inMemoryAnswerAttachmentsRepository: InMemoryAnswerAttachmentsRepository
