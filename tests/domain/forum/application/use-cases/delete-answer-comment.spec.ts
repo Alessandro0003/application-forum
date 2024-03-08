@@ -1,6 +1,6 @@
 import { makeAnswerComment } from 'tests/factories/make-answer-comment'
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
-import { NotAllowedError } from '@/domain/forum/application/use-cases/errors/not-allowed-error'
+import { NotAllowedError } from '@/core/errors/errors/not-allowed-error'
 import { DeleteCommentAnswerUseCase } from '@/domain/forum/application/use-cases/delete-answer-comment'
 import { InMemoryAnswersCommentsRepository } from '../repositories/in-memory-answers-comments-repository'
 
