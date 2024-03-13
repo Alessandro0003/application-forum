@@ -20,6 +20,9 @@
         "@typescript-eslint/no-empty-interface": "off",
         "@typescript-eslint/ban-types": "off",
         "@typescript-eslint/no-extraneous-class": "off",
-        "@typescript-eslint/prefer-readonly": "off"
+        "@typescript-eslint/prefer-readonly": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "no-new" : "off"
     }
 }
