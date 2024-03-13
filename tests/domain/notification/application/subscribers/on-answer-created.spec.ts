@@ -8,6 +8,7 @@ import { makeAnswer } from 'tests/factories/make-answer'
 import { InMemoryNotificationRepository } from '../repositories/in-memory-notifications-repository'
 import { makeQuestion } from 'tests/factories/make-question'
 import { MockInstance } from 'vitest'
+import { waitFor } from 'tests/utils/wait-for'
 
 let inMemoryQuestionAttachmentsRepository: InMemoryQuestionAttachmentsRepository
 let inMemoryQuestionRepository: InMemoryQuestionRepository
@@ -44,6 +45,8 @@ describe('On Answer Created', () => {
     inMemoryQuestionRepository.create(question)
     inMemoryAnswersRepository.create(answer)
 
-    expect(sendNotificationExecuteSpy).toHaveBeenCalled()
+    await waitFor(() => {
+      expect(sendNotificationExecuteSpy).toHaveBeenCalled()
+    })
   })
 })
